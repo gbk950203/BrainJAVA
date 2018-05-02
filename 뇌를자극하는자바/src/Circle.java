@@ -24,14 +24,17 @@ public class Circle{
 		// TODO Auto-generated method stub
 		
 		Circle pizza = new Circle (10, "자바피자");
-		
-		double area = pizza.getArea();
-		System.out.println(pizza.name + "의 면적은" + area);
+		double pizza_area = pizza.getArea();
+		System.out.println(pizza.name + "의 면적은" + pizza_area);
 		
 		Circle donut = new Circle();
+		donut.radius = 2;
 		donut.name = "도넛피자";
-		area = donut.getArea();
-		System.out.println(donut.name + "의 면적은" + area);
+		double donut_area = donut.getArea();
+		System.out.println(donut.name + "의 면적은" + donut_area);
+		
+		System.out.println(pizza.name + "의 면적은" + pizza_area);
+		System.out.println(donut.name + "의 면적은" + donut_area);
 		
 	}
 }
